@@ -1,30 +1,21 @@
 const task3Element = document.getElementById('task-3');
 
-const userBtnName = document.getElementById('btnDisplayName');
-const userInput = document.getElementById('nameForAlertFunc');
-
-const firstName = document.getElementById('firstName');
-const secondName = document.getElementById('secondName');
-const famalyName = document.getElementById('familyName');
-
-alert("test!");
-
-function outputNameWithAlert(){
-    let userText = userInput.value;
-    alert(userText);
+function greet(){
+    alert('Hi there!');
 }
 
-function alertTest(){
-alert("Test!")
+function greetUser(userName){
+    alert('Hi ' + userName);
 }
 
-function concatNames(){
-    alert(firstName.value + " " + secondName.value + " " + famalyName.value);
+function combine(str1,str2,str3){
+    const combinedText = `${str1} ${str2} ${str3}`;
+    return combinedText;
 }
+greet();
+greetUser('Ivan');
 
+task3Element.addEventListener('click', greet);
 
-
-
-userBtnName.addEventListener('click' , outputNameWithAlert);
-task3Element.addEventListener('click',alertTest);
-concatName.addEventListener('click',concatNames)
+const combinedString = combine('Hi', ' there ','! ');
+alert(combinedString);
