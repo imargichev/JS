@@ -64,6 +64,8 @@ function calculateResult(calculationType) {
     mathOperator = '/';
   }
 
+  
+
   createAndWriteOutput(mathOperator, initialResult, enteredNumber);
   writeToLog(calculationType, initialResult, enteredNumber, currentResult);
   // }
